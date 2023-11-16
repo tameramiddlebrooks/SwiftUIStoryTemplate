@@ -24,6 +24,8 @@
 		B71540AB2B05B55400B8CB86 /* FifthParView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71540AA2B05B55400B8CB86 /* FifthParView.swift */; };
 		B71540AD2B05B8DD00B8CB86 /* IfElseToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71540AC2B05B8DD00B8CB86 /* IfElseToggleView.swift */; };
 		B7245AC12B0417A1008D547A /* alertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7245AC02B0417A1008D547A /* alertView.swift */; };
+		FF6761282B02C8F000F2FF44 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6761272B02C8F000F2FF44 /* Skills.swift */; };
+		FFFEE8F42B06A417001152B3 /* Outcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEE8F32B06A417001152B3 /* Outcome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,9 @@
 		B71540AA2B05B55400B8CB86 /* FifthParView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthParView.swift; sourceTree = "<group>"; };
 		B71540AC2B05B8DD00B8CB86 /* IfElseToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfElseToggleView.swift; sourceTree = "<group>"; };
 		B7245AC02B0417A1008D547A /* alertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertView.swift; sourceTree = "<group>"; };
+		FF6761262B02C1AB00F2FF44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF6761272B02C8F000F2FF44 /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		FFFEE8F32B06A417001152B3 /* Outcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Outcome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,7 @@
 		5DE6F66E2AFADF05004ABB4F /* SwiftUIStoryTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				FF6761262B02C1AB00F2FF44 /* Info.plist */,
 				5DE6F66F2AFADF05004ABB4F /* SwiftUIStoryTemplateApp.swift */,
 				5DE6F6712AFADF05004ABB4F /* ContentView.swift */,
 				5DE6F6872AFAE47A004ABB4F /* Chapter1 */,
@@ -126,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				5DE6F6812AFAE3EA004ABB4F /* Chapter3View.swift */,
+				FFFEE8F32B06A417001152B3 /* Outcome.swift */,
+				FF6761272B02C8F000F2FF44 /* Skills.swift */,
 			);
 			path = Chapter3;
 			sourceTree = "<group>";
@@ -218,6 +226,8 @@
 			files = (
 				5DE6F6822AFAE3EA004ABB4F /* Chapter3View.swift in Sources */,
 				B715409F2B05574200B8CB86 /* NavigationView.swift in Sources */,
+				FF6761282B02C8F000F2FF44 /* Skills.swift in Sources */,
+				FFFEE8F42B06A417001152B3 /* Outcome.swift in Sources */,
 				5DE6F6842AFAE3EF004ABB4F /* Chapter4View.swift in Sources */,
 				5DE6F6722AFADF05004ABB4F /* ContentView.swift in Sources */,
 				5DE6F6802AFAE3E6004ABB4F /* Chapter2View.swift in Sources */,
@@ -367,6 +377,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIStoryTemplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -396,6 +407,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIStoryTemplate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
