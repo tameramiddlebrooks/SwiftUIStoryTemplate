@@ -13,7 +13,7 @@ struct Outcome: View {
     var bus: CGFloat
     
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             if code >= 0.6{
                 Text("In the coding portion we used basic operations like buttons, list, and other primative apple functions. And made custom shapes and functionalities for the apps.")
             }

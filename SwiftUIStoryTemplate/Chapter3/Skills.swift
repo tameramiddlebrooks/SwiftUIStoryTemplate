@@ -8,16 +8,17 @@
 import SwiftUI
 
 struct Skills: View{
-    //    @State var coding = Double.random(in: 0...1)
-    //    @State var business = Double.random(in: 0...1)
-    //    @State var design = Double.random(in: 0...1)
     var type: String
     var lvl: CGFloat
+    
     @State private var drawingWidth = false
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("\(type): \(lvl)")
+            let num = lvl * 10
+            let formatted = String(format: "%.0f", num)
+            
+            Text("\(type): \(formatted)")
                 .bold()
             ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 3)
@@ -27,6 +28,7 @@ struct Skills: View{
                     .frame(width: drawingWidth ? lvl * 250 : 0, alignment: .leading)
                     .animation(.easeInOut(duration: 5), value: drawingWidth)
             }
+            
             .frame(width: 250, height: 12)
             .onAppear {
                 drawingWidth.toggle()
