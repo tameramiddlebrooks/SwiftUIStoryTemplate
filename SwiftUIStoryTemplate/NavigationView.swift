@@ -14,6 +14,7 @@ struct NavigationView: View {
             NavigationStack {
                 ZStack {
                     Color.shadeOfGreen
+                        .ignoresSafeArea()
                     
                     VStack {
                         NavigationLink(destination: FirstParView()) {
@@ -24,7 +25,6 @@ struct NavigationView: View {
                             NavigationLink(destination: SecondParView()) {
                                 
                             }
-                            .tint(.clear)
                             
                             NavigationLink(destination:
                                             ThirdParView()) {
@@ -44,9 +44,9 @@ struct NavigationView: View {
                     }
                     .navigationTitle("Tamera's Chapter")
                     .toolbarBackground(Color.shadeOfGreen, for: .navigationBar)
+                   // .ignoresSafeArea(.all)
                     .toolbarBackground(.visible, for: .navigationBar)
                 }
-                .background(.clear)
 
             }
             

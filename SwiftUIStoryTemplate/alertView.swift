@@ -10,6 +10,7 @@ import SwiftUI
 func submit() {
     Text("Your email has been submitted to the Apple Developer Academy email list!")
 }
+
 struct alertView: View {
     @State private var alertShowing = false
     @State private var userEmail = ""
@@ -36,6 +37,7 @@ struct alertView: View {
             
         }
         .font(.subheadline)
+        .ignoresSafeArea(.all)
         
     }
 
