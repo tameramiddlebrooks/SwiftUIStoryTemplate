@@ -16,12 +16,14 @@ struct Chapter3View: View {
             VStack{
                 Text("Academy Story")
                     .font(.largeTitle)
+                Text("Chapter")
                 Image(systemName: "apple.logo")
                     .font(.largeTitle)
                     .overlay(
                         Text("3")
-                            .font(.headline)
+                            .padding([.top], 5)
                             .foregroundStyle(.white))
+                Text("Academy Challenges")
                 //List
                 ScrollView{
                     Text("The first challenge we were given allowed us to apply what we learned about programming, design, and business to our own apps.")
@@ -50,14 +52,19 @@ struct Chapter3View: View {
                         }
                     }
                     if showSkills == true{
-                        Text("We were able to use what we learned about programming by implementing and expanded on those topics into our apps.")
-                        Outcome(code: coding, des: design, bus: business)
-                        Text("We used what we learned about the HIG to design a user friendly app.")
-                        Text("And we used what we learned about bussiness by finding and marketing our app to a specific audience.")
+                        VStack(alignment: .leading){
+                            Text("We were able to use what we learned about programming by implementing and expanded on those topics into our apps.")
+                            HStack{
+                                Spacer()
+                                Image("Laptop")
+                            }
+                            Outcome(code: coding, des: design, bus: business)
+                            Text("We used what we learned about the HIG to design a user friendly app.")
+                            Text("And we used what we learned about bussiness by finding and marketing our app to a specific audience.")
+                        }
                     }
                 }
-//                .scrollContentBackground(.hidden)
-//                .border(/*@START_MENU_TOKEN@*/Color(red: 0.437, green: 0.873, blue: 0.61)/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                .padding()
             }
         }
     }
