@@ -30,6 +30,7 @@ struct IfElseToggleView: View {
                 }
             }
         }
+
     }
 }
 #Preview {
