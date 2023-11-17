@@ -8,7 +8,8 @@ struct Chapter4View: View {
     let goodVibesFormed = true // or false, depending on your scenario
     
     var body: some View {
-//        NavigationView{
+        //        NavigationView{
+        NavigationStack{
             ZStack {
                 Color.shadeOfGreen
                     .edgesIgnoringSafeArea(.all)
@@ -38,13 +39,14 @@ struct Chapter4View: View {
                 .navigationBarTitleDisplayMode(.automatic)
                 .navigationBarItems(
                     leading: Image(systemName: "person.fill"),
-                    trailing: NavigationLink(destination: ContentView(), label: {
+                    trailing: NavigationLink(destination: PictureView(), label: {
                         Image(systemName: "gear")
                     })
                 )
             }
         }
     }
+}
 //}
 
 struct NewView_Previews: PreviewProvider {
